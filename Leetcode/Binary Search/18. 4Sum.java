@@ -42,7 +42,6 @@ class Solution {
                     
                 }
             }
-        
         return ans;
     }
 }
