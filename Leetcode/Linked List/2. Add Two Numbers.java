@@ -23,8 +23,6 @@ class Solution {
             }
             else if(l1!=null)
             {
-
-                
                 temp.next=new ListNode((l1.val+carry)%10);
                 carry=(l1.val+carry)/10;
                 l1=l1.next;
