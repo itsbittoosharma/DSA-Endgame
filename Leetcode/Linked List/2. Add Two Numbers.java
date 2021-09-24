@@ -23,18 +23,20 @@ class Solution {
             }
             else if(l1!=null)
             {
+                
                 temp.next=new ListNode((l1.val+carry)%10);
                 carry=(l1.val+carry)/10;
                 l1=l1.next;
             }
             else if(l2!=null)
             {
+
                 temp.next=new ListNode((l2.val+carry)%10);
                 carry=(l2.val+carry)/10;
                 l2=l2.next;
             }
 
-            
+
             else {temp.next=new ListNode(carry%10);
                  carry=carry/10;}
             temp=temp.next;
