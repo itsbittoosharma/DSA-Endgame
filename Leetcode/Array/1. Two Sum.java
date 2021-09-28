@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 //Brute-force with O(n^2)
 
 class Solution {
@@ -22,7 +24,7 @@ class Solution {
 
 //O(n) using hashmap
 
-class Solution {
+class Solution1 {
     public int[] twoSum(int[] nums, int target) {
      int[] ans = new int[2];
      HashMap<Integer, Integer> m=new HashMap<>();
