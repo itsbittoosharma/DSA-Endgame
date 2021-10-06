@@ -5,5 +5,6 @@ class Solution {
         if(n%2!=0) return false;
         if(n%2==0) return isPowerOfTwo(n/2);
         return false;
+    
     }
 }
