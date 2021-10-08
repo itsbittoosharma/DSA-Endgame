@@ -23,6 +23,11 @@ Largest square matrix possible is
 1 1 1
 
 here side is 3 units hence area = 9.
+
+Time Complexity: O(n*m) 
+Space Complexity: O(n*m)
+note: n,m are dimensions of the matrix
+
 Solution:
 
 */
