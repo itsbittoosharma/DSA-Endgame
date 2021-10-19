@@ -1,4 +1,9 @@
- Merge Two Sorted Lists
+21. Merge Two Sorted Lists
+/*
+Question Link: https://leetcode.com/problems/merge-two-sorted-lists/
+Problem Description:
+
+
 
 Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
 
@@ -14,6 +19,11 @@ Example 2:
 Input: l1 = [], l2 = []
 Output: []
 
+Constraints:
+
+The number of nodes in both lists is in the range [0, 50].
+-100 <= Node.val <= 100
+Both l1 and l2 are sorted in non-decreasing order.
 
 public class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
