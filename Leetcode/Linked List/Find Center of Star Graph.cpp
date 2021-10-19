@@ -31,3 +31,19 @@ int findCenter(vector<vector<int>>& edges) {
             if(adj[i].size()==n)return i; 
         return 0;
     }
+
+
+added the c++ code
+
+
+
+
+
+
+java code--
+ 
+ 
+ public int findCenter(int[][] edges) {
+    int x = edges[0][0], y = edges[0][1];
+    return (y == edges[1][0] || y == edges[1][1]) ? y : x;
+}
