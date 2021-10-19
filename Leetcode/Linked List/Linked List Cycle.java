@@ -1,4 +1,10 @@
-Linked List Cycle
+
+/*
+
+141. Linked List Cycle
+
+Question Link:https://leetcode.com/problems/linked-list-cycle/
+Problem Description:
 
 Given head, the head of a linked list, determine if the linked list has a cycle in it.
 
@@ -20,6 +26,12 @@ Example 2:
 Input: head = [1,2], pos = 0
 Output: true
 Explanation: There is a cycle in the linked list, where the tail connects to the 0th node.
+
+Constraints:
+
+The number of the nodes in the list is in the range [0, 104].
+-105 <= Node.val <= 105
+pos is -1 or a valid index in the linked-list.
   
   
   class HasCycleInLinkedList{
@@ -32,3 +44,27 @@ Explanation: There is a cycle in the linked list, where the tail connects to the
        return isCycle;
    }
 }
+
+
+
+
+C++ code--
+
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        if (!head) 
+            return false;
+        
+        ListNode *slow = head, *fast = head;
+        
+        while (fast->next && fast->next->next) {
+            slow = slow->next;
+            fast = fast->next->next;
+            if (slow == fast) 
+                return true;
+        }
+        
+        return false;
+    }
+};
