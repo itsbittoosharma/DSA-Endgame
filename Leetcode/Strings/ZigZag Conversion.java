@@ -1,4 +1,11 @@
-ZigZag Conversion
+Question Link: https://leetcode.com/problems/zigzag-conversion/
+
+
+6. ZigZag Conversion
+
+Problem Description:
+
+
 
 The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
 
@@ -25,6 +32,12 @@ P     I    N
 A   L S  I G
 Y A   H R
 P     I
+
+Constraints:
+
+1 <= s.length <= 1000
+s consists of English letters (lower-case and upper-case), ',' and '.'.
+1 <= numRows <= 1000
 
 public String convert(String s, int nRows) {
     char[] c = s.toCharArray();
