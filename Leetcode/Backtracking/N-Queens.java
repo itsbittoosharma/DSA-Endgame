@@ -1,5 +1,6 @@
 class Solution {
     public List<List<String>> solveNQueens(int n) {
+        List<List<String>> result=new ArrayList<List<String>();
         ArrayList<String> temp=new ArrayList<String>();
         if(n==1)
         {
