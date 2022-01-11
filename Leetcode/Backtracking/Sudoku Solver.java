@@ -4,7 +4,7 @@ class Solution {
     }
      
     public boolean isValid(char[][] board,int row,int col,int val)
-    {
+    { 
         for(int n=0;n<9;n++)
         {
             if(board[row][n]==(char)(val+'0')) return false;
