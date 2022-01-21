@@ -5,7 +5,6 @@ class Solution {
         if(n<=1) return n;
         for(int p=2;p<=n;p++)
         {
-            int temp=ans;
             ans=i+j;
             i=j;j=ans;
         }
