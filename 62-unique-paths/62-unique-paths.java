@@ -1,18 +1,24 @@
 class Solution {
     public int uniquePaths(int m, int n) {
-        int[][] arr=new int[m][n];
-        return check(m,n,0,0,arr);
+        // int[][] arr=new int[m][n];
+        int[] x=new int[n];
+        Arrays.fill(x,1);
+        return check(m,n,x);
     }
-    public int check(int m, int n, int i, int j,int[][] arr)
+    public int check(int m, int n, int[] arr)
     {
-        if(i==m-1&&j==n-1) return 1;
-        if(arr[i][j]!=0)
+        int temp=1;
+        for(int k=1;k<m;k++)
         {
-            
-            return arr[i][j];
+        for(int i=1;i<arr.length;i++)
+        {
+            temp=temp+arr[i];
+            arr[i]=temp;
         }
-        if(i<m-1) arr[i][j]+=check(m,n,i+1,j,arr);
-        if(j<n-1) arr[i][j]+=check(m,n,i,j+1,arr);
-        return arr[i][j];
+        temp=1;
+            
+        
+        }
+        return arr[n-1];
     }
 }
