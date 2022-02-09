@@ -1,6 +1,5 @@
 class Solution {
     public int uniquePaths(int m, int n) {
-        // int[][] arr=new int[m][n];
         int[] x=new int[n];
         Arrays.fill(x,1);
         return check(m,n,x);
@@ -16,8 +15,6 @@ class Solution {
             arr[i]=temp;
         }
         temp=1;
-            
-        
         }
         return arr[n-1];
     }
