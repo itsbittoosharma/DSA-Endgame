@@ -1,5 +1,5 @@
 # Kth smallest element
-##  Medium 
+## Medium 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Given an array <strong>arr[]</strong> and an integer&nbsp;<strong>K</strong> where K is smaller than size of array, the task is to find the <strong>K<sup>th</sup> smallest</strong> element in the given array. It is given that all array elements are distinct.</span></p>
 
