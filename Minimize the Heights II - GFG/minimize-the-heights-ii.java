@@ -34,7 +34,7 @@ import java.util.*;
 class Solution {
     int getMinDiff(int[] arr, int n, int k) {
        
-       Arrays.sort(arr);
+      Arrays.sort(arr);
       int max=arr[n-1];
       int min=arr[0];
       int r=max-min;
@@ -48,5 +48,5 @@ class Solution {
           }
       }
       return r;
-      }
+    }
 }
