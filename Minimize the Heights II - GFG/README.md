@@ -5,7 +5,7 @@
 Find out the minimum possible difference of the height&nbsp;of shortest and longest towers after you have modified each tower.</span></p>
 
 <p><span style="font-size:18px">You can find a slight modification of the problem&nbsp;<a href="https://practice.geeksforgeeks.org/problems/minimize-the-heights-i/1/" target="_blank">here</a>.<br>
-Note: It is compulsory to increase or decrease (if possible) by K to each tower.</span></p>
+Note: It is compulsory to increase or decrease&nbsp;by K to each tower.</span></p>
 
 <p><br>
 <span style="font-size:18px"><strong>Example 1:</strong></span></p>
