@@ -45,7 +45,7 @@ class Solution {
         {
             sum+=a[j];
             if(sum>=x) ans=Math.min(ans,j-i+1);
-            while(sum>x && i<=j)
+            while(sum>x)
             {
                 ans=Math.min(ans,j-i+1);
                 sum-=a[i];
