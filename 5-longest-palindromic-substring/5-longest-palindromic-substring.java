@@ -11,22 +11,23 @@ class Solution {
             {
                 st1.push(a[i]);
             }
-            else {if(st1.peek()==a[i])
-            {
-                int j=i;
-                int count=0;
-                String temp="";
-                while(!st1.isEmpty()&&j<a.length&&st1.peek()==a[j])
+            else {
+                if(st1.peek()==a[i])
                 {
-                    temp=a[j]+temp+a[j];
-                    count+=2;
-                    st2.push(st1.pop());
-                    j++;
+                    int j=i;
+                    int count=0;
+                    String temp="";
+                    while(!st1.isEmpty()&&j<a.length&&st1.peek()==a[j])
+                    {
+                        temp=a[j]+temp+a[j];
+                        count+=2;
+                        st2.push(st1.pop());
+                        j++;
+                    }
+                    while(!st2.isEmpty())
+                        st1.push(st2.pop());
+                    if(count>ans.length()) ans=new String(temp);
                 }
-                while(!st2.isEmpty())
-                    st1.push(st2.pop());
-                if(count>ans.length()) ans=new String(temp);
-            }
             if(i!=s.length()-1 && st1.peek()==a[i+1])
             {
                 int j=i+1;
@@ -41,10 +42,11 @@ class Solution {
                 }
                 while(!st2.isEmpty())
                     st1.push(st2.pop());
-                if(count>ans.length()) ans=new String(temp);
+                if(count>ans.length()) 
+                    ans=new String(temp);
             }
-                 st1.push(a[i]);
-                 }
+            st1.push(a[i]);
+        }
         }
         return ans;
     }
