@@ -22,15 +22,23 @@ class Solution {
             TreeNode temp=new TreeNode(val,root,null);
             return temp;
         }
-        if(depth==2)
+        while(depth>2)
         {
-            root.left=new TreeNode(val,root.left,null);
-            root.right=new TreeNode(val,null,root.right);
+            int k=nodes.size();
+            while(k>0)
+            {
+                TreeNode temp=nodes.poll();
+                if(temp.left!=null) nodes.add(temp.left);
+                if(temp.right!=null) nodes.add(temp.right);
+                k--;
+            }
+            depth--;
         }
-        else
+        while(nodes.size()>0)
         {
-            if(root.left!=null) addOneRow(root.left,val,depth-1);
-            if(root.right!=null) addOneRow(root.right,val,depth-1);
+            TreeNode temp=nodes.poll();
+            temp.left=new TreeNode(val,temp.left,null);
+            temp.right=new TreeNode(val,null,temp.right);
         }
         return root;
     }
