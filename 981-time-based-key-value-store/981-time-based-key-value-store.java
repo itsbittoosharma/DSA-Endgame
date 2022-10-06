@@ -1,9 +1,6 @@
 class TimeMap {
     HashMap<String,HashMap<Integer,String>> hm = new HashMap<>();
     HashMap<String,Integer> lastAdded= new HashMap<>();
-    public TimeMap() {
-        
-    }
     
     public void set(String key, String value, int timestamp) {
         if(!hm.containsKey(key))
